@@ -1,0 +1,72 @@
+/* Base layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* Heading */
+.glitch {
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+  animation: flicker 3s infinite;
+}
+
+/* Subtitle */
+h2 {
+  font-size: 1.5rem;
+  color: #94a3b8;
+  margin-top: 1rem;
+}
+
+/* Flicker keyframes */
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow:
+      0 0 2px #fff,
+      0 0 10px #00fff9,
+      0 0 5px #00fff9;
+  }
+
+  20%, 24%, 55% {
+    opacity: 0.8;
+    text-shadow:
+      0 0 1px #fff,
+      0 0 5px #ff3c3c,
+      0 0 2px #ff3c3c;
+  }
+
+  40% {
+    opacity: 0.5;
+    transform: skewX(-1deg);
+    text-shadow:
+      -2px 0 #ff3c3c,
+      2px 0 #00fff9;
+  }
+
+  60% {
+    opacity: 0.9;
+    transform: skewX(1deg);
+    text-shadow:
+      0 0 3px #00fff9;
+  }
+
+  80% {
+    opacity: 0.7;
+    transform: none;
+    text-shadow:
+      0 0 2px #ff3c3c;
+  }
+}
