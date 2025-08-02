@@ -2,14 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Astitcode</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ASTITCODE – Modern data solutions tailored to your business needs." />
+  <title>ASTITCODE | Data Solutions for Modern Businesses</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-BxnQbmC+LdQ0HHYVJ43+R2uU5if6oD3qKD73+o2Cjz4yiyNb+V07fIwTmgVqzx4eef/UG+cjG0kh7RczWkJFUw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="centered">
-    <h1 class="glitch">Astitcode</h1>
-    <h2>Your Data Solutions</h2>
-  </div>
+  <!-- Navigation Bar -->
+  <header class="navbar" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="logo">ASTITCODE</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-content">
+      <h1>Unlock the Power of Your Data</h1>
+      <p>Modern data solutions crafted to help your business thrive in a connected world.</p>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container about-content">
+      <div class="text">
+        <h2>About Us</h2>
+        <p>
+          We are a team of passionate data engineers and technologists on a mission to
+          simplify complex data challenges. ASTITCODE believes in the transformative
+          power of data and strives to make advanced analytics and engineering
+          accessible to businesses of all sizes. This section is intentionally kept
+          high‑level so you can update it later with your own story, values and
+          mission statement.
+        </p>
+      </div>
+      <div class="about-image-wrapper">
+        <!-- Decorative image illustrating teamwork or technology -->
+        <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80" alt="Data collaboration illustration" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card">
+          <i class="fas fa-database"></i>
+          <h3>Data Engineering</h3>
+          <p>Design, build and maintain the infrastructure your data deserves.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Analytics & Insights</h3>
+          <p>Turn raw data into actionable insights that drive your business forward.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud Integration</h3>
+          <p>Seamlessly integrate cloud technologies to scale and secure your data operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+        <div id="form-message" class="form-message" role="alert" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> ASTITCODE. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
